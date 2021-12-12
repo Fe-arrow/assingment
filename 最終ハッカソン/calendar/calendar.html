@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="../add/add.css">
+  </head>
+  <body>
+    <section class="left">
+      <div class="wrapper">
+        <!-- xxxx年xx月を表示 -->
+        <h1 id="header"></h1>  
+        <!-- ボタンクリックで月移動 -->
+        <div id="next-prev-button">
+            <button id="prev" onclick="prev()">‹</button>
+            <button id="next" onclick="next()">›</button>
+        </div>
+    
+        <!-- カレンダー -->
+        <div id="calendar"></div>
+        <script src="calendar.js" type="text/javascript"></script>
+      </div> 
+    </section>
+    
+      <!--add-->
+
+    <section class="right">
+      <div id="input">
+        <label>TODO: <input id="todo"></label><br>
+        優先度: <select>
+          <option>低</option>
+          <option selected>普</option>
+          <option>高</option>
+        </select>
+        <label>期日: <input type="date"></label><br>
+        <button id="submit">登録</button>
+      </div>
+      <div class="tablelist">
+        <table>
+          <tr class="all-list">
+            <th id="todoLabel">TODO</th>
+            <th>優先度</th>
+            <th id="dateLabel">期日</th>
+            <th>完了</th>
+          </tr>
+        </table>
+      </div>
+      
+
+     <script src="../add/add.js"></script>
+    </section>
+      
+   
+  </body>
+    

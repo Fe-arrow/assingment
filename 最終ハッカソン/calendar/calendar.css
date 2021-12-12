@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+html{
+    height: 100%;
+    background-color:lightslategray;
+}
+
+/*全体*/
+body{
+    display: flex;
+    max-width: 100%;
+    max-height: 95%;
+
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Deadline_logo.svg/1200px-Deadline_logo.svg.png);
+    background-repeat:no-repeat; 
+    background-position:center top;
+    background-size: auto 10%;
+}
+ .left{
+     flex-grow: 1;
+     margin-top: 3%;
+ }
+
+.right{
+    flex-grow: 1;
+    max-width: 50%;
+    margin-top: 5%;
+    outline: 2px solid #ddd;
+}
+
+.wrapper{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    color: #666;
+    flex-grow: 1;
+}
+
+
+#header {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    margin: 2rem 0 0;
+}
+
+
+/*カレンダー*/
+#calendar {
+    text-align: center;
+    width: 100%;
+}
+table {
+    outline: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+th.cal ,td.disabled,td.able,td.today {
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    outline: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/*日曜日*/
+td:first-child {
+    color: red;
+}
+/*土曜日*/
+td:last-child {
+    color: blue;
+}
+/*前後月の日付*/
+td.disabled {
+    color: #ccc;
+}
+/*本日*/
+td.today {
+    background-color: #D65E72;
+    color: #fff;
+}
+
+/*ボタン*/
+#next-prev-button {
+    position: relative;
+}
+#next-prev-button button{
+    cursor: pointer;
+    background: #B78D4A;
+    color: #fff;
+    border: 1px solid #B78D4A;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#next-prev-button button:hover{
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+}
+#prev {
+    float: left;
+}
+#next {
+    float: right;
+}
+
+.all{
+    max-height: 50px;
+    overflow: scroll;
+}

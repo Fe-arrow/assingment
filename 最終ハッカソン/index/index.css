@@ -1,0 +1,45 @@
+.bokumetu{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: 80px;
+}
+#delaycrusher{
+    background-image: url(../hakkasonimg/白3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.title a{
+    text-decoration: none;
+}
+
+.cal{
+    text-align: center;
+    margin-top: 70px;
+  
+    font-size: 40px;
+}
+.cal a{
+    text-decoration: none;
+}
+.recal{
+    text-align: center;
+    font-size: 80px;
+    font-family: sans-serif;
+    margin-top: 200px;
+}
+.recal a{
+    text-decoration: none;
+}
+.hayame{
+    text-align: center;
+    font-size: 50px;
+}
+.modoru{
+    text-align: left;
+}
